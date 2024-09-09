@@ -1,7 +1,8 @@
 # PaySmart
 
 PaySmart is a digital payment platform designed to provide secure and efficient payment solutions. It offers features such as user-to-user transfers, merchant payments, and bank integrations.
-Technologies Used
+
+Technologies Used:
 
     Frontend: Next.js
     Backend: Express
@@ -12,28 +13,22 @@ Technologies Used
 
 Project Structure
 
-├── api
-
-│   ├── routes
-
-│   ├── controllers
-
-│   └── models
-
-├── components
-
-├── pages
-
-├── public
-
-├── .env
-
-├── prisma
-
-├── .gitignore
-
-└── README.md
-
+    ├── api 
+    │   ├── routes    
+    │   ├── controllers    
+    │   └── models    
+    ├── components    
+    ├── pages    
+    ├── public  
+    |---packages/db
+    |    ├── prisma
+    |       ├── schema.prisma
+    |       ├── migrations
+    |       └── seed.js
+    ├── .env    
+    ├── .gitignore    
+    └── README.md
+    
 
 Installation and Setup
 
@@ -44,24 +39,27 @@ Installation and Setup
 
     Use code with caution.
 
-Install dependencies:
-Bash
-
-cd PaySmart
-npm install
+#Install dependencies:
+    
+    Bash
+    
+    cd PaySmart
+    npm install
 
 Use code with caution.
 Set up environment variables: Create a .env file and add your environment variables (e.g., database connection details, API keys).
-Run Prisma migrations:
-Bash
+    Run Prisma migrations:
+    
+    Bash
 
-npx prisma migrate dev
+    npx prisma migrate dev
 
 Use code with caution.
 
 Development
 
-    Start the development server:
+Start the development server:
+    
     Bash
 
     npm run dev
