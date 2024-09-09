@@ -13,23 +13,34 @@ Technologies Used
 Project Structure
 
 ├── api
+
 │   ├── routes
+
 │   ├── controllers
+
 │   └── models
+
 ├── components
+
 ├── pages
+
 ├── public
+
 ├── .env
+
 ├── prisma
+
 ├── .gitignore
+
 └── README.md
+
 
 Installation and Setup
 
     Clone the repository:
     Bash
 
-    git clone <your-repository-url>
+    git clone https://github.com/cyberdslayer/PaySmart
 
     Use code with caution.
 
