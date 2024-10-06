@@ -33,8 +33,9 @@
 - **APIs**: Banking API integration for off-ramp payments
 - **DevOps**: AWS, Docker (for containerization), and CI/CD for seamless deployment
 - **Monorepo Tooling**: Turborepo (for managing multiple apps like user app, merchant app, and bank_webhook)
--Recoil
-##Why Use Recoil in PaySmart?
+- Recoil
+
+## Why Use Recoil in PaySmart?
 
 Recoil is a state management library for React applications that offers several advantages, making it a valuable choice for projects like PaySmart. 
 
