@@ -7,7 +7,7 @@ import { AppbarClient } from "../components/AppbarClient";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Wallet",
+  title: "Paysmart",
   description: "Simple wallet app",
 };
 
@@ -23,9 +23,7 @@ export default function RootLayout({
           <div className="min-w-screen min-h-screen bg-[#ebe6e6]">
             <AppbarClient />
             {children}
-          </div>
-          <p>this is the user-app/app</p>
-          
+          </div>          
         </body>
       </Providers>
     </html>

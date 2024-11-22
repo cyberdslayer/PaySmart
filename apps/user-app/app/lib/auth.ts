@@ -1,8 +1,12 @@
 import db from "@repo/db/client";
 import CredentialsProvider from "next-auth/providers/credentials"
 import bcrypt from "bcrypt";
+import GithubProvider from "next-auth/providers/github"
+import { SessionProvider } from "next-auth/react";
 
 export const authOptions = {
+
+    
     providers: [
       CredentialsProvider({
           name: 'Credentials',
@@ -39,6 +43,14 @@ export const authOptions = {
                         password: hashedPassword
                     }
                 });
+                
+                await db.balance.create({
+                    data:{
+                        userId: user.id,
+                        amount: 0,
+                        locked: 0
+                    }
+                })
             
                 return {
                     id: user.id.toString(),
@@ -51,7 +63,14 @@ export const authOptions = {
 
             return null
           },
+        }),
+
+        GithubProvider({
+            clientId: 'Ov23liwJO6nF8rMxH9sJ',
+            clientSecret: '2cae1b8a29008bfb2ca08bda978da3bc980a9089'
         })
+
+
     ],
     secret: process.env.JWT_SECRET || "secret",
     callbacks: {
